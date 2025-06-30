@@ -83,7 +83,7 @@
             border-color: white;
         }
 
-        /* Botón de subir - MEJORADO PARA MAYOR VISIBILIDAD */
+        /* Botón de subir - MODIFICADO SEGÚN SOLICITUD */
         .scroll-top-btn {
             position: fixed;
             bottom: 30px;
@@ -91,47 +91,39 @@
             z-index: 1000;
             cursor: pointer;
             animation: bounceUp 2s infinite;
-            width: 60px;
-            height: 60px;
+            width: 50px; /* Tamaño reducido */
+            height: 50px; /* Tamaño reducido */
             display: none;
             align-items: center;
             justify-content: center;
-            background: white;
-            border-radius: 50%;
+            background: transparent; /* Fondo transparente */
+            border-radius: 8px; /* Bordes redondeados (cuadrado con esquinas redondeadas) */
             transition: all 0.3s ease;
-            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
-            border: 2px solid #e0b48d;
+            border: none; /* Sin borde */
         }
 
         .scroll-top-btn:hover {
-            background: #f8f4f0;
             transform: scale(1.05);
         }
 
         .scroll-top-btn .arrow-up {
-            width: 30px;
-            /* Tamaño aumentado */
-            height: 30px;
-            /* Tamaño aumentado */
+            width: 20px; /* Tamaño ajustado */
+            height: 20px; /* Tamaño ajustado */
             position: relative;
-            transform: rotate(-135deg);
-            /* Rotación para apuntar hacia arriba */
+            transform: rotate(-135deg); /* Rotación para apuntar hacia arriba */
         }
 
         .scroll-top-btn .arrow-up:before,
         .scroll-top-btn .arrow-up:after {
             content: '';
             position: absolute;
-            background: #e0b48d;
-            /* Color dorado para mejor visibilidad */
+            background: #e0b48d; /* Color dorado */
             transition: all 0.3s ease;
         }
 
         .scroll-top-btn .arrow-up:before {
             width: 3px;
-            /* Línea un poco más gruesa */
-            height: 30px;
-            /* Línea más larga */
+            height: 20px; /* Altura ajustada */
             left: 50%;
             top: 0;
             margin-left: -1.5px;
@@ -139,26 +131,20 @@
         }
 
         .scroll-top-btn .arrow-up:after {
-            width: 15px;
-            /* Triángulo más grande */
-            height: 15px;
-            /* Triángulo más grande */
+            width: 12px; /* Ancho ajustado */
+            height: 12px; /* Altura ajustada */
             border-bottom: 3px solid #e0b48d;
-            /* Grosor aumentado y color dorado */
             border-right: 3px solid #e0b48d;
-            /* Grosor aumentado y color dorado */
             bottom: 0;
             left: 50%;
-            margin-left: -7.5px;
+            margin-left: -6px;
             border-radius: 2px;
         }
 
         .scroll-top-btn:hover .arrow-up:before,
         .scroll-top-btn:hover .arrow-up:after {
             background: #d4a276;
-            /* Color dorado más oscuro al pasar el mouse */
             border-color: #d4a276;
-            /* Color dorado más oscuro al pasar el mouse */
         }
 
         @keyframes bounce {
@@ -310,7 +296,7 @@
         <section class="hero-slider hero-static">
             <div class="wedding-announcement">
                 <div class="couple-text">
-                    <h3 id="curve-text">¡Nos casamos! Con amor, </h3>
+                    <h3 id="curve-text">¡Nos casamos! Con amor. </h3> <br>
                     <h2 class="wow slideInUp couple-name" data-wow-duration="1s">Daniel & Flora</h2>
                 </div>
             </div>
@@ -327,9 +313,9 @@
         <!-- end of hero slider -->
 
         <!-- Botón de flecha hacia arriba (fijo) - AHORA MÁS VISIBLE -->
-        <div id="scroll-top-btn" class="scroll-top-btn">
-            <div class="arrow-up"></div>
-        </div>
+       <div id="scroll-top-btn" class="scroll-top-btn">
+    <img src="assets/images/arrow2.png" alt="Flecha hacia arriba">
+</div>
 
         <!-- Start header -->
         <header id="header" class="site-header header-style-1">
