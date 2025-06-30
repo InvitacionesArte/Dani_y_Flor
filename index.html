@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,7 @@
     <meta name="author" content="irstheme">
 
     <title> Daniel & Flora - Invitación de Boda </title>
-    
+
     <link href="assets/css/themify-icons.css" rel="stylesheet">
     <link href="assets/css/flaticon.css" rel="stylesheet">
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
@@ -29,7 +30,8 @@
             bottom: 60px;
             left: 50%;
             transform: translateX(-50%);
-            z-index: 1000; /* Alto z-index para estar sobre el efecto de agua */
+            z-index: 1000;
+            /* Alto z-index para estar sobre el efecto de agua */
             cursor: pointer;
             animation: bounce 2s infinite;
             width: 60px;
@@ -38,14 +40,14 @@
             align-items: center;
             justify-content: center;
         }
-        
+
         .scroll-down-btn .arrow {
             width: 40px;
             height: 40px;
             position: relative;
             transform: rotate(45deg);
         }
-        
+
         .scroll-down-btn .arrow:before,
         .scroll-down-btn .arrow:after {
             content: '';
@@ -53,7 +55,7 @@
             background: rgba(255, 255, 255, 0.8);
             transition: all 0.3s ease;
         }
-        
+
         .scroll-down-btn .arrow:before {
             width: 2px;
             height: 25px;
@@ -62,7 +64,7 @@
             margin-left: -1px;
             border-radius: 1px;
         }
-        
+
         .scroll-down-btn .arrow:after {
             width: 12px;
             height: 12px;
@@ -73,13 +75,13 @@
             margin-left: -6px;
             border-radius: 2px;
         }
-        
+
         .scroll-down-btn:hover .arrow:before,
         .scroll-down-btn:hover .arrow:after {
             background: white;
             border-color: white;
         }
-        
+
         /* Botón de subir - MEJORADO PARA MAYOR VISIBILIDAD */
         .scroll-top-btn {
             position: fixed;
@@ -96,88 +98,137 @@
             background: white;
             border-radius: 50%;
             transition: all 0.3s ease;
-            box-shadow: 0 2px 15px rgba(0,0,0,0.2);
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
             border: 2px solid #e0b48d;
         }
-        
+
         .scroll-top-btn:hover {
             background: #f8f4f0;
             transform: scale(1.05);
         }
-        
+
         .scroll-top-btn .arrow-up {
-            width: 30px; /* Tamaño aumentado */
-            height: 30px; /* Tamaño aumentado */
+            width: 30px;
+            /* Tamaño aumentado */
+            height: 30px;
+            /* Tamaño aumentado */
             position: relative;
-            transform: rotate(-135deg); /* Rotación para apuntar hacia arriba */
+            transform: rotate(-135deg);
+            /* Rotación para apuntar hacia arriba */
         }
-        
+
         .scroll-top-btn .arrow-up:before,
         .scroll-top-btn .arrow-up:after {
             content: '';
             position: absolute;
-            background: #e0b48d; /* Color dorado para mejor visibilidad */
+            background: #e0b48d;
+            /* Color dorado para mejor visibilidad */
             transition: all 0.3s ease;
         }
-        
+
         .scroll-top-btn .arrow-up:before {
-            width: 3px; /* Línea un poco más gruesa */
-            height: 30px; /* Línea más larga */
+            width: 3px;
+            /* Línea un poco más gruesa */
+            height: 30px;
+            /* Línea más larga */
             left: 50%;
             top: 0;
             margin-left: -1.5px;
             border-radius: 1px;
         }
-        
+
         .scroll-top-btn .arrow-up:after {
-            width: 15px; /* Triángulo más grande */
-            height: 15px; /* Triángulo más grande */
-            border-bottom: 3px solid #e0b48d; /* Grosor aumentado y color dorado */
-            border-right: 3px solid #e0b48d; /* Grosor aumentado y color dorado */
+            width: 15px;
+            /* Triángulo más grande */
+            height: 15px;
+            /* Triángulo más grande */
+            border-bottom: 3px solid #e0b48d;
+            /* Grosor aumentado y color dorado */
+            border-right: 3px solid #e0b48d;
+            /* Grosor aumentado y color dorado */
             bottom: 0;
             left: 50%;
             margin-left: -7.5px;
             border-radius: 2px;
         }
-        
+
         .scroll-top-btn:hover .arrow-up:before,
         .scroll-top-btn:hover .arrow-up:after {
-            background: #d4a276; /* Color dorado más oscuro al pasar el mouse */
-            border-color: #d4a276; /* Color dorado más oscuro al pasar el mouse */
+            background: #d4a276;
+            /* Color dorado más oscuro al pasar el mouse */
+            border-color: #d4a276;
+            /* Color dorado más oscuro al pasar el mouse */
         }
-        
+
         @keyframes bounce {
-            0%, 20%, 50%, 80%, 100% {
+
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
                 transform: translate(-50%, 0);
             }
+
             40% {
                 transform: translate(-50%, -15px);
             }
+
             60% {
                 transform: translate(-50%, -7px);
             }
         }
-        
+
         @keyframes bounceUp {
-            0%, 20%, 50%, 80%, 100% {
+
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
                 transform: translateY(0);
             }
+
             40% {
                 transform: translateY(-15px);
             }
+
             60% {
                 transform: translateY(-7px);
             }
         }
-        
+
         /* Transición suave al desplazarse */
         html {
             scroll-behavior: smooth;
         }
-        
+
         /* Ajuste para efecto de agua */
         .ripple {
-            z-index: 10; /* Menor que el botón */
+            z-index: 10;
+            /* Menor que el botón */
+        }
+        
+        /* ESTILOS AGREGADOS PARA EL BOTÓN DE CONFIRMACIÓN */
+        .rspv-form .submit-btn a {
+            display: inline-block;
+            background: #e0b48d;
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 600;
+            padding: 12px 30px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .rspv-form .submit-btn a:hover {
+            background: #d4a276;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
         }
     </style>
 
@@ -203,7 +254,7 @@
                 <i class="fi flaticon-favorite-heart-button"></i>
             </div>
         </div>
-        <!-- end preloader --> 
+        <!-- end preloader -->
 
         <!-- start of hero -->
         <section class="hero-slider hero-static">
@@ -220,7 +271,7 @@
             </div>
 
             <div class="slide-inner slide-bg-image" data-background="assets/images/slider/slide-1.jpg">
-            </div> <!-- end slide-inner --> 
+            </div> <!-- end slide-inner -->
             <div class="ripple"></div>
         </section>
         <!-- end of hero slider -->
@@ -311,14 +362,19 @@
                         <div class="couple-area clearfix">
                             <div class="text-grid bride">
                                 <h3>La Novia</h3>
-                                <p>Flora es una arquitecta apasionada por la naturaleza y la pintura. Su sonrisa ilumina cualquier habitación y su amor por los pequeños detalles hace que cada momento sea especial. Su lema de vida: "La belleza está en los detalles simples".</p>
+                                <p>Flora es una arquitecta apasionada por la naturaleza y la pintura. Su sonrisa ilumina
+                                    cualquier habitación y su amor por los pequeños detalles hace que cada momento sea
+                                    especial. Su lema de vida: "La belleza está en los detalles simples".</p>
                                 <div class="social">
                                     <ul>
-                                        <li><a href="www.facebook.com"><i class="ti-facebook"></i></a></li>
-                                        <li><a href="La Novia
-"><i class="ti-twitter-alt"></i></a></li>
-                                        <li><a href="www.instagram.com"><i class="ti-instagram"></i></a></li>
-                                        <li><a href="www.pinterest.com"><i class="ti-pinterest"></i></a></li>
+                                        <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer"
+                                                aria-label="Facebook"><i class="ti-facebook"></i></a></li>
+                                        <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer"
+                                                aria-label="Twitter"><i class="ti-twitter-alt"></i></a></li>
+                                        <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer"
+                                                aria-label="Instagram"><i class="ti-instagram"></i></a></li>
+                                        <li><a href="https://pinterest.com" target="_blank" rel="noopener noreferrer"
+                                                aria-label="Pinterest"><i class="ti-pinterest"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -327,14 +383,19 @@
                             </div>
                             <div class="text-grid groom">
                                 <h3>El Novio</h3>
-                                <p>Daniel es chef de profesión y aventurero de corazón. Conoce los secretos de la cocina mediterránea y siempre está buscando nuevos retos. Su filosofía: "La vida es como una buena receta, requiere paciencia y amor".</p>
+                                <p>Daniel es chef de profesión y aventurero de corazón. Conoce los secretos de la cocina
+                                    mediterránea y siempre está buscando nuevos retos. Su filosofía: "La vida es como
+                                    una buena receta, requiere paciencia y amor".</p>
                                 <div class="social">
-                                     <ul>
-                                        <li><a href="www.facebook.com"><i class="ti-facebook"></i></a></li>
-                                        <li><a href="La Novia
-"><i class="ti-twitter-alt"></i></a></li>
-                                        <li><a href="www.instagram.com"><i class="ti-instagram"></i></a></li>
-                                        <li><a href="www.pinterest.com"><i class="ti-pinterest"></i></a></li>
+                                    <ul>
+                                        <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer"
+                                                aria-label="Facebook"><i class="ti-facebook"></i></a></li>
+                                        <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer"
+                                                aria-label="Twitter"><i class="ti-twitter-alt"></i></a></li>
+                                        <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer"
+                                                aria-label="Instagram"><i class="ti-instagram"></i></a></li>
+                                        <li><a href="https://pinterest.com" target="_blank" rel="noopener noreferrer"
+                                                aria-label="Pinterest"><i class="ti-pinterest"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -360,19 +421,26 @@
                         <div class="story-grids">
                             <div class="grid">
                                 <h3>Primer encuentro</h3>
-                                <p>Nos conocimos en un taller de cocina en Barcelona. Daniel era el instructor y Flora una participante. Lo que comenzó con consejos sobre cómo cortar cebollas sin llorar, terminó en una conversación que duró hasta la madrugada.</p>
+                                <p>Nos conocimos en un taller de cocina en Barcelona. Daniel era el instructor y Flora
+                                    una participante. Lo que comenzó con consejos sobre cómo cortar cebollas sin llorar,
+                                    terminó en una conversación que duró hasta la madrugada.</p>
                             </div>
                             <div class="grid">
                                 <h3>Primera cita</h3>
-                                <p>Nuestra primera cita fue un picnic a la luz de la luna en la playa de la Barceloneta. Daniel preparó tapas mientras Flora seleccionó los vinos. La conexión fue inmediata y mágica.</p>
+                                <p>Nuestra primera cita fue un picnic a la luz de la luna en la playa de la Barceloneta.
+                                    Daniel preparó tapas mientras Flora seleccionó los vinos. La conexión fue inmediata
+                                    y mágica.</p>
                             </div>
                             <div class="grid">
                                 <h3>La propuesta</h3>
-                                <p>Durante un viaje a Santorini, Daniel organizó una cena privada en un acantilado con vista al mar Egeo. Al final de la cena, con el sol poniéndose, se arrodilló con un anillo hecho a mano.</p>
+                                <p>Durante un viaje a Santorini, Daniel organizó una cena privada en un acantilado con
+                                    vista al mar Egeo. Al final de la cena, con el sol poniéndose, se arrodilló con un
+                                    anillo hecho a mano.</p>
                             </div>
                             <div class="grid">
                                 <h3>Compromiso</h3>
-                                <p>Celebramos nuestro compromiso con familiares y amigos íntimos en una finca familiar en el campo. Hubo música en vivo, comida casera y muchas lágrimas de felicidad.</p>
+                                <p>Celebramos nuestro compromiso con familiares y amigos íntimos en una finca familiar
+                                    en el campo. Hubo música en vivo, comida casera y muchas lágrimas de felicidad.</p>
                             </div>
                             <img src="assets/images/ring.png" alt>
                         </div>
@@ -404,8 +472,10 @@
                                     <li><i class="ti-location-pin"></i> Iglesia de Santa María, Plaza Mayor, Madrid</li>
                                     <li><i class="ti-time"></i> 30 Ago 2025 (4PM - 6PM)</li>
                                 </ul>
-                                <p>Una ceremonia íntima en una iglesia histórica del siglo XVIII, seguida de un cóctel en sus jardines. Vestuario formal elegante.</p>
-                                <a class="see-location-btn popup-gmaps" href="https://maps.app.goo.gl/TRkvbaVbuf2W8mwMA">
+                                <p>Una ceremonia íntima en una iglesia histórica del siglo XVIII, seguida de un cóctel
+                                    en sus jardines. Vestuario formal elegante.</p>
+                                <a class="see-location-btn popup-gmaps"
+                                    href="https://maps.app.goo.gl/TRkvbaVbuf2W8mwMA">
                                     Ver ubicación <i class="fa fa-angle-right"></i>
                                 </a>
                             </div>
@@ -418,8 +488,10 @@
                                     <li><i class="ti-location-pin"></i> Hacienda La Luz, Camino Viejo 120, Madrid</li>
                                     <li><i class="ti-time"></i> 30 Ago 2025 (7PM - 1AM)</li>
                                 </ul>
-                                <p>Celebraremos bajo las estrellas en los jardines de una hacienda andaluza. Habrá música en vivo, baile y una cena preparada por el novio.</p>
-                                <a class="see-location-btn popup-gmaps" href="https://maps.app.goo.gl/YuvVs3JT26jcbhVE9">
+                                <p>Celebraremos bajo las estrellas en los jardines de una hacienda andaluza. Habrá
+                                    música en vivo, baile y una cena preparada por el novio.</p>
+                                <a class="see-location-btn popup-gmaps"
+                                    href="https://maps.app.goo.gl/YuvVs3JT26jcbhVE9">
                                     Ver ubicación <i class="fa fa-angle-right"></i>
                                 </a>
                             </div>
@@ -436,7 +508,8 @@
                 <div class="row">
                     <div class="col col-lg-8 col-lg-offset-2">
                         <div class="text">
-                            <p>"Ver a Daniel y Flora juntos es recordar que el amor verdadero existe. Son dos almas gemelas que se complementan perfectamente."</p>
+                            <p>"Ver a Daniel y Flora juntos es recordar que el amor verdadero existe. Son dos almas
+                                gemelas que se complementan perfectamente."</p>
                             <h5>Carlos Martínez</h5>
                             <span>-Mejor amigo</span>
                         </div>
@@ -467,10 +540,14 @@
                                     <h4>Miguel Ángel</h4>
                                     <p>Padrino</p>
                                     <ul>
-                                        <li><a href="www.facebook.com"><i class="ti-facebook"></i></a></li>
-                                        <li><a href="www.twitter.com"><i class="ti-twitter-alt"></i></a></li>
-                                        <li><a href="www.instagram.com"><i class="ti-instagram"></i></a></li>
-                                        <li><a href="www.pinterest.com"><i class="ti-pinterest"></i></a></li>
+                                        <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer"
+                                                aria-label="Facebook"><i class="ti-facebook"></i></a></li>
+                                        <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer"
+                                                aria-label="Twitter"><i class="ti-twitter-alt"></i></a></li>
+                                        <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer"
+                                                aria-label="Instagram"><i class="ti-instagram"></i></a></li>
+                                        <li><a href="https://pinterest.com" target="_blank" rel="noopener noreferrer"
+                                                aria-label="Pinterest"><i class="ti-pinterest"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -482,10 +559,14 @@
                                     <h4>Antonio López</h4>
                                     <p>Testigo</p>
                                     <ul>
-                                        <li><a href="www.facebook.com"><i class="ti-facebook"></i></a></li>
-                                        <li><a href="www.twitter.com"><i class="ti-twitter-alt"></i></a></li>
-                                        <li><a href="www.instagram.com"><i class="ti-instagram"></i></a></li>
-                                        <li><a href="www.pinterest.com"><i class="ti-pinterest"></i></a></li>
+                                        <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer"
+                                                aria-label="Facebook"><i class="ti-facebook"></i></a></li>
+                                        <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer"
+                                                aria-label="Twitter"><i class="ti-twitter-alt"></i></a></li>
+                                        <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer"
+                                                aria-label="Instagram"><i class="ti-instagram"></i></a></li>
+                                        <li><a href="https://pinterest.com" target="_blank" rel="noopener noreferrer"
+                                                aria-label="Pinterest"><i class="ti-pinterest"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -496,11 +577,15 @@
                                 <div class="details">
                                     <h4>Fernando Ruiz</h4>
                                     <p>Amigo</p>
-                                   <ul>
-                                        <li><a href="www.facebook.com"><i class="ti-facebook"></i></a></li>
-                                        <li><a href="www.twitter.com"><i class="ti-twitter-alt"></i></a></li>
-                                        <li><a href="www.instagram.com"><i class="ti-instagram"></i></a></li>
-                                        <li><a href="www.pinterest.com"><i class="ti-pinterest"></i></a></li>
+                                    <ul>
+                                        <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer"
+                                                aria-label="Facebook"><i class="ti-facebook"></i></a></li>
+                                        <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer"
+                                                aria-label="Twitter"><i class="ti-twitter-alt"></i></a></li>
+                                        <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer"
+                                                aria-label="Instagram"><i class="ti-instagram"></i></a></li>
+                                        <li><a href="https://pinterest.com" target="_blank" rel="noopener noreferrer"
+                                                aria-label="Pinterest"><i class="ti-pinterest"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -512,10 +597,14 @@
                                     <h4>Jorge Morales</h4>
                                     <p>Amigo</p>
                                     <ul>
-                                        <li><a href="www.facebook.com"><i class="ti-facebook"></i></a></li>
-                                        <li><a href="www.twitter.com"><i class="ti-twitter-alt"></i></a></li>
-                                        <li><a href="www.instagram.com"><i class="ti-instagram"></i></a></li>
-                                        <li><a href="www.pinterest.com"><i class="ti-pinterest"></i></a></li>
+                                        <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer"
+                                                aria-label="Facebook"><i class="ti-facebook"></i></a></li>
+                                        <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer"
+                                                aria-label="Twitter"><i class="ti-twitter-alt"></i></a></li>
+                                        <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer"
+                                                aria-label="Instagram"><i class="ti-instagram"></i></a></li>
+                                        <li><a href="https://pinterest.com" target="_blank" rel="noopener noreferrer"
+                                                aria-label="Pinterest"><i class="ti-pinterest"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -527,10 +616,14 @@
                                     <h4>Sofía Martín</h4>
                                     <p>Madrina</p>
                                     <ul>
-                                        <li><a href="www.facebook.com"><i class="ti-facebook"></i></a></li>
-                                        <li><a href="www.twitter.com"><i class="ti-twitter-alt"></i></a></li>
-                                        <li><a href="www.instagram.com"><i class="ti-instagram"></i></a></li>
-                                        <li><a href="www.pinterest.com"><i class="ti-pinterest"></i></a></li>
+                                        <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer"
+                                                aria-label="Facebook"><i class="ti-facebook"></i></a></li>
+                                        <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer"
+                                                aria-label="Twitter"><i class="ti-twitter-alt"></i></a></li>
+                                        <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer"
+                                                aria-label="Instagram"><i class="ti-instagram"></i></a></li>
+                                        <li><a href="https://pinterest.com" target="_blank" rel="noopener noreferrer"
+                                                aria-label="Pinterest"><i class="ti-pinterest"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -541,12 +634,16 @@
                                 <div class="details">
                                     <h4>Laura García</h4>
                                     <p>Testigo</p>
-                                    <<ul>
-        <li><a href="https://www.facebook.com" target="_blank"><i class="ti-facebook"></i></a></li>
-        <li><a href="https://www.twitter.com" target="_blank"><i class="ti-twitter-alt"></i></a></li>
-        <li><a href="https://www.instagram.com" target="_blank"><i class="ti-instagram"></i></a></li>
-        <li><a href="https://www.pinterest.com" target="_blank"><i class="ti-pinterest"></i></a></li>
-    </ul>
+                                    <ul>
+                                        <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer"
+                                                aria-label="Facebook"><i class="ti-facebook"></i></a></li>
+                                        <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer"
+                                                aria-label="Twitter"><i class="ti-twitter-alt"></i></a></li>
+                                        <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer"
+                                                aria-label="Instagram"><i class="ti-instagram"></i></a></li>
+                                        <li><a href="https://pinterest.com" target="_blank" rel="noopener noreferrer"
+                                                aria-label="Pinterest"><i class="ti-pinterest"></i></a></li>
+                                    </ul>
                                 </div>
                             </div>
                             <div class="grid">
@@ -554,15 +651,19 @@
                                     <img src="assets/images/bridesmaid/img-3.jpg" alt>
                                 </div>
                                 <div class="details">
-    <h4>Elena Vargas</h4>
-    <p>Amiga</p>
-    <ul>
-        <li><a href="https://www.facebook.com" target="_blank"><i class="ti-facebook"></i></a></li>
-        <li><a href="https://www.twitter.com" target="_blank"><i class="ti-twitter-alt"></i></a></li>
-        <li><a href="https://www.instagram.com" target="_blank"><i class="ti-instagram"></i></a></li>
-        <li><a href="https://www.pinterest.com" target="_blank"><i class="ti-pinterest"></i></a></li>
-    </ul>
-</div>
+                                    <h4>Elena Vargas</h4>
+                                    <p>Amiga</p>
+                                    <ul>
+                                        <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer"
+                                                aria-label="Facebook"><i class="ti-facebook"></i></a></li>
+                                        <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer"
+                                                aria-label="Twitter"><i class="ti-twitter-alt"></i></a></li>
+                                        <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer"
+                                                aria-label="Instagram"><i class="ti-instagram"></i></a></li>
+                                        <li><a href="https://pinterest.com" target="_blank" rel="noopener noreferrer"
+                                                aria-label="Pinterest"><i class="ti-pinterest"></i></a></li>
+                                    </ul>
+                                </div>
                             </div>
                             <div class="grid">
                                 <div class="img-holder">
@@ -572,10 +673,14 @@
                                     <h4>Carmen Díaz</h4>
                                     <p>Amiga</p>
                                     <ul>
-                                        <li><a href="www.facebook.com"><i class="ti-facebook"></i></a></li>
-                                        <li><a href="www.twitter.com"><i class="ti-twitter-alt"></i></a></li>
-                                        <li><a href="www.instagram.com"><i class="ti-instagram"></i></a></li>
-                                        <li><a href="www.pinterest.com"><i class="ti-pinterest"></i></a></li>
+                                        <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer"
+                                                aria-label="Facebook"><i class="ti-facebook"></i></a></li>
+                                        <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer"
+                                                aria-label="Twitter"><i class="ti-twitter-alt"></i></a></li>
+                                        <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer"
+                                                aria-label="Instagram"><i class="ti-instagram"></i></a></li>
+                                        <li><a href="https://pinterest.com" target="_blank" rel="noopener noreferrer"
+                                                aria-label="Pinterest"><i class="ti-pinterest"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -654,46 +759,11 @@
                         <div class="rspv-form">
                             <h3>¿Asistirás?</h3>
                             <p>Por favor confirma antes del 15 de Agosto de 2025</p>
-                            <div class="left-flower"></div>
-                            <div class="right-flower"></div>
-                            <form id="rsvp-form" class="clearfix form validate-rsvp-form row" method="post">
-                                <div>
-                                    <input type="text" name="name" class="form-control" placeholder="Nombre*">
-                                </div>
-                                <div>
-                                    <input type="email" name="email" class="form-control" placeholder="Email*">
-                                </div>
-                                <div>
-                                    <select class="form-control" name="guest" >
-                                        <option disabled selected>Número de Invitados*</option>
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                    </select>
-                                </div>
-                                <div>
-                                    <select class="form-control" name="events" >
-                                        <option disabled selected>Asistiré a*</option>
-                                        <option>Todos los eventos</option>
-                                        <option>Solo la ceremonia</option>
-                                        <option>Solo la recepción</option>
-                                    </select>
-                                </div>
-                                <div>
-                                    <textarea class="form-control" name="notes" placeholder="Tu mensaje*"></textarea>
-                                </div>
-                                <div class="submit-btn">
-                                    <button type="submit" class="theme-btn">Confirmar ahora</button>
-                                    <div id="loader">
-                                        <i class="ti-reload"></i>
-                                    </div>
-                                </div>
-                                <div class="success-error-message">
-                                    <div id="success">¡Gracias por confirmar!</div>
-                                    <div id="error"> Ocurrió un error al enviar. Por favor intenta nuevamente. </div>
-                                </div>
-                            </form>
+                            
+                            <div class="submit-btn">
+                                <a href="https://docs.google.com/forms/" 
+                                   class="theme-btn" target="_blank">Confirmar ahora</a> 
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -708,7 +778,8 @@
                     <div class="col col-lg-6 col-lg-offset-3">
                         <div class="section-title-s2">
                             <h2>Lista de regalos</h2>
-                            <p>Tu presencia es nuestro mejor regalo. Si deseas hacernos un detalle, hemos creado una lista en estas tiendas.</p>
+                            <p>Tu presencia es nuestro mejor regalo. Si deseas hacernos un detalle, hemos creado una
+                                lista en estas tiendas.</p>
                         </div>
                     </div>
                 </div>
@@ -744,7 +815,8 @@
                                 <h2>Daniel <br>& <br>Flora</h2>
                             </div>
                             <h3>Por siempre nuestro amor, Gracias</h3>
-                            <p>Copyright 2025, Hecho con amor por <a href="http://themeforest.net/user/themexshaper">themexshaper</a></p>
+                            <p>Copyright 2025, Hecho con amor por <a
+                                    href="http://themeforest.net/user/themexshaper">themexshaper</a></p>
                         </div>
                     </div>
                 </div>
@@ -769,34 +841,34 @@
 
     <!-- Script para los botones de desplazamiento -->
     <script>
-        $(document).ready(function() {
+        $(document).ready(function () {
             // Botón de flecha hacia abajo
-            $('#scroll-down-btn').on('click', function() {
+            $('#scroll-down-btn').on('click', function () {
                 $('html, body').animate({
                     scrollTop: $('#wedding-date-section').offset().top
                 }, 800);
             });
-            
+
             // Botón de flecha hacia arriba
-            $('#scroll-top-btn').on('click', function() {
+            $('#scroll-top-btn').on('click', function () {
                 $('html, body').animate({
                     scrollTop: 0
                 }, 800);
             });
-            
+
             // Mostrar u ocultar el botón de subir
-            $(window).scroll(function() {
+            $(window).scroll(function () {
                 if ($(this).scrollTop() > 200) {
                     $('#scroll-top-btn').fadeIn();
                 } else {
                     $('#scroll-top-btn').fadeOut();
                 }
             });
-            
+
             // Desplazamiento suave para enlaces internos
-            $('a[href*="#"]').on('click', function(e) {
+            $('a[href*="#"]').on('click', function (e) {
                 e.preventDefault();
-                
+
                 $('html, body').animate({
                     scrollTop: $($(this).attr('href')).offset().top
                 }, 800);
@@ -804,4 +876,5 @@
         });
     </script>
 </body>
+
 </html>
