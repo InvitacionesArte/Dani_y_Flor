@@ -3701,5 +3701,83 @@ font-size: 16px;
   text-decoration: none;
 }
 
+/*   CONTADOR
+/* CONTENEDOR PRINCIPAL */
+.clock-grids {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
 
-/* CONTADOR
+#clock {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 800px;
+}
+
+/* BLOQUES DE TIEMPO */
+.time-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 100px;
+    padding: 15px 10px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    
+}
+
+.time-number {
+    font-family: "Great Vibes", cursive;
+    font-size: 3.5rem;
+    color: #b19a56;
+    line-height: 1;
+    font-weight: normal;
+}
+
+.time-label {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    color: #2f2f2f;
+    font-weight: 600;
+    margin-top: 5px;
+    letter-spacing: 1px;
+}
+
+.wedding-message {
+    font-size: 2rem;
+    color: #b19a56;
+    text-align: center;
+    padding: 20px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .time-block {
+        min-width: 80px;
+        padding: 10px 5px;
+    }
+    .time-number {
+        font-size: 2.5rem;
+    }
+    .time-label {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #clock {
+        gap: 8px;
+    }
+    .time-block {
+        min-width: 70px;
+    }
+    .time-number {
+        font-size: 2rem;
+    }
+    .time-label {
+        font-size: 0.7rem;
+    }
+}

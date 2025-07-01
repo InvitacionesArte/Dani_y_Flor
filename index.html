@@ -894,7 +894,66 @@
     </script>
 
 
-<!-- CONTADOR -->
+<!--CONTADOR-->
+<script>
+// Función para formatear números con 2 dígitos
+function formatNumber(num) {
+    return num < 10 ? `0${num}` : num;
+}
+
+// Contador regresivo principal
+function startCountdown() {
+    const weddingDate = new Date('2025-08-30T00:00:00').getTime();
+    
+    function update() {
+        const now = new Date().getTime();
+        const distance = weddingDate - now;
+        
+        // Cálculos del tiempo
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+        // Generar HTML
+        document.getElementById('clock').innerHTML = `
+            <div class="time-block">
+                <span class="time-number">${formatNumber(days)}</span>
+                <span class="time-label"><BR>DÍAS</span>
+            </div>
+            <div class="time-block">
+                <span class="time-number">${formatNumber(hours)}</span>
+                <span class="time-label"><BR>HORAS</span>
+            </div>
+            <div class="time-block">
+                <span class="time-number">${formatNumber(minutes)}</span>
+                <span class="time-label"><BR>MINUTOS</span>
+            </div>
+            <div class="time-block">
+                <span class="time-number">${formatNumber(seconds)}</span>
+                <span class="time-label"><BR>SEGUNDOS</span>
+            </div>
+        `;
+        
+        // Si la cuenta regresiva terminó
+        if (distance < 0) {
+            clearInterval(timer);
+            document.getElementById('clock').innerHTML = `
+                <div class="wedding-message">
+                    ¡La boda ha comenzado!
+                </div>
+            `;
+        }
+    }
+    
+    // Actualizar inmediatamente y luego cada segundo
+    update();
+    const timer = setInterval(update, 1000);
+}
+
+// Iniciar cuando el DOM esté listo
+document.addEventListener('DOMContentLoaded', startCountdown);
+</script>
 
 </body>
 <footer class="footer">
