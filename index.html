@@ -91,15 +91,20 @@
             z-index: 1000;
             cursor: pointer;
             animation: bounceUp 2s infinite;
-            width: 50px; /* Tamaño reducido */
-            height: 50px; /* Tamaño reducido */
+            width: 50px;
+            /* Tamaño reducido */
+            height: 50px;
+            /* Tamaño reducido */
             display: none;
             align-items: center;
             justify-content: center;
-            background: transparent; /* Fondo transparente */
-            border-radius: 8px; /* Bordes redondeados (cuadrado con esquinas redondeadas) */
+            background: transparent;
+            /* Fondo transparente */
+            border-radius: 8px;
+            /* Bordes redondeados (cuadrado con esquinas redondeadas) */
             transition: all 0.3s ease;
-            border: none; /* Sin borde */
+            border: none;
+            /* Sin borde */
         }
 
         .scroll-top-btn:hover {
@@ -107,23 +112,28 @@
         }
 
         .scroll-top-btn .arrow-up {
-            width: 20px; /* Tamaño ajustado */
-            height: 20px; /* Tamaño ajustado */
+            width: 20px;
+            /* Tamaño ajustado */
+            height: 20px;
+            /* Tamaño ajustado */
             position: relative;
-            transform: rotate(-135deg); /* Rotación para apuntar hacia arriba */
+            transform: rotate(-135deg);
+            /* Rotación para apuntar hacia arriba */
         }
 
         .scroll-top-btn .arrow-up:before,
         .scroll-top-btn .arrow-up:after {
             content: '';
             position: absolute;
-            background: #e0b48d; /* Color dorado */
+            background: #e0b48d;
+            /* Color dorado */
             transition: all 0.3s ease;
         }
 
         .scroll-top-btn .arrow-up:before {
             width: 3px;
-            height: 20px; /* Altura ajustada */
+            height: 20px;
+            /* Altura ajustada */
             left: 50%;
             top: 0;
             margin-left: -1.5px;
@@ -131,8 +141,10 @@
         }
 
         .scroll-top-btn .arrow-up:after {
-            width: 12px; /* Ancho ajustado */
-            height: 12px; /* Altura ajustada */
+            width: 12px;
+            /* Ancho ajustado */
+            height: 12px;
+            /* Altura ajustada */
             border-bottom: 3px solid #e0b48d;
             border-right: 3px solid #e0b48d;
             bottom: 0;
@@ -195,20 +207,22 @@
             z-index: 10;
             /* Menor que el botón */
         }
-        
+
         /* ESTILOS MEJORADOS PARA EL BOTÓN DE CONFIRMACIÓN */
         .rspv-form {
             position: relative;
-            z-index: 100; /* Asegura que esté por encima */
+            z-index: 100;
+            /* Asegura que esté por encima */
         }
-        
+
         .rspv-form .submit-btn {
             text-align: center;
             margin-top: 30px;
             position: relative;
-            z-index: 200; /* Mayor que otros elementos */
+            z-index: 200;
+            /* Mayor que otros elementos */
         }
-        
+
         .rspv-form .submit-btn a {
             display: inline-block;
             background: linear-gradient(45deg, #e0b48d, #d4a276);
@@ -223,48 +237,52 @@
             transition: all 0.3s ease;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
             position: relative;
-            z-index: 300; /* Máxima prioridad */
+            z-index: 300;
+            /* Máxima prioridad */
             text-transform: uppercase;
             letter-spacing: 1px;
         }
-        
+
         .rspv-form .submit-btn a:hover {
             transform: translateY(-3px);
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
             background: linear-gradient(45deg, #d4a276, #c6925e);
         }
-        
+
         .rspv-form .submit-btn a:active {
             transform: translateY(1px);
         }
-        
+
         .rspv-form .submit-btn a i {
             margin-right: 10px;
             font-size: 20px;
         }
-        
+
         /* Efecto de pulso para llamar la atención */
         @keyframes pulse {
             0% {
                 transform: scale(1);
                 box-shadow: 0 0 0 0 rgba(224, 180, 141, 0.7);
             }
+
             70% {
                 transform: scale(1.05);
                 box-shadow: 0 0 0 15px rgba(224, 180, 141, 0);
             }
+
             100% {
                 transform: scale(1);
                 box-shadow: 0 0 0 0 rgba(224, 180, 141, 0);
             }
         }
-        
+
         .rspv-form .submit-btn a {
             animation: pulse 2s infinite;
         }
-        
+
         .rspv-form .submit-btn a:hover {
-            animation: none; /* Detiene la animación al pasar el mouse */
+            animation: none;
+            /* Detiene la animación al pasar el mouse */
         }
     </style>
 
@@ -313,9 +331,9 @@
         <!-- end of hero slider -->
 
         <!-- Botón de flecha hacia arriba (fijo) - AHORA MÁS VISIBLE -->
-       <div id="scroll-top-btn" class="scroll-top-btn">
-    <img src="assets/images/arrow2.png" alt="Flecha hacia arriba">
-</div>
+        <div id="scroll-top-btn" class="scroll-top-btn">
+            <img src="assets/images/arrow2.png" alt="Flecha hacia arriba">
+        </div>
 
         <!-- Start header -->
         <header id="header" class="site-header header-style-1">
@@ -340,7 +358,7 @@
                             <li><a href="#people">Invitados</a></li>
                             <li><a href="#gallery">Galería</a></li>
                             <li><a href="#rsvp">Confirmar</a></li>
-                            
+
                         </ul>
                     </div><!-- end of nav-collapse -->
                 </div><!-- end of container -->
@@ -468,54 +486,54 @@
 
         <!-- start wedding-location-section -->
         <section class="wedding-location-section section-padding" id="events">
-            <div class="container">
-                <div class="row">
-                    <div class="col col-xs-12">
-                        <div class="section-title">
-                            <h2>Eventos de la boda</h2>
-                        </div>
-                    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col col-xs-12">
+                <div class="section-title">
+                    <h2>Eventos de la boda</h2>
                 </div>
-                <div class="row">
-                    <div class="col col-xs-12">
-                        <div class="location-grids clearfix">
-                            <div class="grid">
-                                <div class="img-holder">
-                                    <img src="assets/images/reception-pic.jpg" alt>
-                                </div>
-                                <h3>Ceremonia</h3>
-                                <ul>
-                                    <li><i class="ti-location-pin"></i> Iglesia de Santa María, Plaza Mayor, Madrid</li>
-                                    <li><i class="ti-time"></i> 30 Ago 2025 (4PM - 6PM)</li>
-                                </ul>
-                                <p>Una ceremonia íntima en una iglesia histórica del siglo XVIII, seguida de un cóctel
-                                    en sus jardines. Vestuario formal elegante.</p>
-                                <a class="see-location-btn popup-gmaps"
-                                    href="https://maps.app.goo.gl/T6haRSNDE9Nw5n1D6">
-                                    Ver ubicación <i class="fa fa-angle-right"></i>
-                                </a>
-                            </div>
-                            <div class="grid">
-                                <div class="img-holder">
-                                    <img src="assets/images/wedding-party-pic.jpg" alt>
-                                </div>
-                                <h3>Recepción</h3>
-                                <ul>
-                                    <li><i class="ti-location-pin"></i> Hacienda La Luz, Camino Viejo 120, Madrid</li>
-                                    <li><i class="ti-time"></i> 30 Ago 2025 (7PM - 1AM)</li>
-                                </ul>
-                                <p>Celebraremos bajo las estrellas en los jardines de una hacienda andaluza. Habrá
-                                    música en vivo, baile y una cena preparada por el novio.</p>
-                                <a class="see-location-btn popup-gmaps"
-                                    href="https://maps.app.goo.gl/my8r6PQaTyxRuXZCA">
-                                    Ver ubicación <i class="fa fa-angle-right"></i>
-                                </a>
-                            </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col col-xs-12">
+                <div class="location-grids clearfix">
+                    <div class="grid">
+                        <div class="img-holder">
+                            <img src="assets/images/reception-pic.jpg" alt>
                         </div>
+                        <h3>Ceremonia</h3>
+                        <ul>
+                            <li><i class="ti-location-pin"></i> Iglesia de Santa María, Plaza Mayor, Madrid</li>
+                            <li><i class="ti-time"></i> 30 Ago 2025 (4PM - 6PM)</li>
+                        </ul>
+                        <p>Una ceremonia íntima en una iglesia histórica del siglo XVIII, seguida de un cóctel
+                            en sus jardines. Vestuario formal elegante.</p>
+                        <a class="see-location-btn" href="https://maps.app.goo.gl/T6haRSNDE9Nw5n1D6"
+                            target="_blank" rel="noopener noreferrer nofollow">
+                            Ver ubicación <i class="fa fa-angle-right"></i>
+                        </a>
+                    </div>
+                    <div class="grid">
+                        <div class="img-holder">
+                            <img src="assets/images/wedding-party-pic.jpg" alt>
+                        </div>
+                        <h3>Recepción</h3>
+                        <ul>
+                            <li><i class="ti-location-pin"></i> Hacienda La Luz, Camino Viejo 120, Madrid</li>
+                            <li><i class="ti-time"></i> 30 Ago 2025 (7PM - 1AM)</li>
+                        </ul>
+                        <p>Celebraremos bajo las estrellas en los jardines de una hacienda andaluza. Habrá
+                            música en vivo, baile y una cena preparada por el novio.</p>
+                        <a class="see-location-btn" href="https://maps.app.goo.gl/my8r6PQaTyxRuXZCA"
+                            target="_blank" rel="noopener noreferrer nofollow">
+                            Ver ubicación <i class="fa fa-angle-right"></i>
+                        </a>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </div>
+</section>
         <!-- end wedding-location-section -->
 
         <!-- start wishes-section -->
@@ -775,10 +793,10 @@
                         <div class="rspv-form">
                             <h3>¿Asistirás?</h3><br>
                             <p>Por favor confirma antes del 15 de Agosto de 2025</p><br>
-                            
+
                             <div class="submit-btn">
                                 <a href="https://forms.gle/rkQ83CgxfWHXeWoz6" target="_blank">
-                                   <i class="fas fa-check-circle"></i> Confirmar ahora
+                                    <i class="fas fa-check-circle"></i> Confirmar ahora
                                 </a>
                             </div>
                         </div>
@@ -799,37 +817,41 @@
                                 lista en estas tiendas.</p>
                         </div>
                     </div>
-                </div> 
+                </div>
                 <div class="row">
                     <div class="col col-xs-12">
                         <div class="partner-grids clearfix">
-    <div class="grid">
-        <a href="https://mesaderegalos.liverpool.com.mx/?gad_source=1&gad_campaignid=12463324257&gbraid=0AAAAABmIDJ2xwRRvxEfTnYxYZbNenWy0d&gclid=Cj0KCQjw64jDBhDXARIsABkk8J5dMwV-_auTWPXk5cn4WBm5xDUTCN92B9Kd676K1Bi5GZUBA1ta19oaAopyEALw_wcB&gclsrc=aw.ds" target="_blank" rel="noopener noreferrer">
-            <img src="assets/images/partners/img-1.jpg" alt="Logo Tienda 1">
-        </a>
-    </div>
-    <div class="grid">
-        <a href="https://www.chapur.com.mx/mesa-de-regalos?srsltid=AfmBOorbfzwUK4VqYsLxnsUvlE8lAnnrJ52U9nEiIPNtPl07mS1Pyfa-" target="_blank" rel="noopener noreferrer">
-            <img src="assets/images/partners/img-2.jpg" alt="Logo Tienda 2">
-        </a>
-    </div>
-    <div class="grid">
-        <a href="https://www.gucci.com/es/es/ca/decor-lifestyle/decor-c-decor?srsltid=AfmBOorbqgPe3uxBnPBbSXXJgTv1OKrbJsNUgEr0p8KKQHC-LEdqfYhr" target="_blank" rel="noopener noreferrer">
-            <img src="assets/images/partners/img-3.jpg" alt="Logo Tienda 3">
-        </a>
-    </div>
-    <div class="grid">
-        <a href="https://www.cyamoda.com/giftcard.html?srsltid=AfmBOopJ3NBKKazBSdBxN8dZOs4a8IPMY4NEEgRrKl0EQNkBOFD1lscl" target="_blank" rel="noopener noreferrer">
-            <img src="assets/images/partners/img-4.jpg" alt="Logo Tienda 4">
-        </a>
-    </div>
-</div>
+                            <div class="grid">
+                                <a href="https://mesaderegalos.liverpool.com.mx/?gad_source=1&gad_campaignid=12463324257&gbraid=0AAAAABmIDJ2xwRRvxEfTnYxYZbNenWy0d&gclid=Cj0KCQjw64jDBhDXARIsABkk8J5dMwV-_auTWPXk5cn4WBm5xDUTCN92B9Kd676K1Bi5GZUBA1ta19oaAopyEALw_wcB&gclsrc=aw.ds"
+                                    target="_blank" rel="noopener noreferrer">
+                                    <img src="assets/images/partners/img-1.jpg" alt="Logo Tienda 1">
+                                </a>
+                            </div>
+                            <div class="grid">
+                                <a href="https://www.chapur.com.mx/mesa-de-regalos?srsltid=AfmBOorbfzwUK4VqYsLxnsUvlE8lAnnrJ52U9nEiIPNtPl07mS1Pyfa-"
+                                    target="_blank" rel="noopener noreferrer">
+                                    <img src="assets/images/partners/img-2.jpg" alt="Logo Tienda 2">
+                                </a>
+                            </div>
+                            <div class="grid">
+                                <a href="https://www.gucci.com/es/es/ca/decor-lifestyle/decor-c-decor?srsltid=AfmBOorbqgPe3uxBnPBbSXXJgTv1OKrbJsNUgEr0p8KKQHC-LEdqfYhr"
+                                    target="_blank" rel="noopener noreferrer">
+                                    <img src="assets/images/partners/img-3.jpg" alt="Logo Tienda 3">
+                                </a>
+                            </div>
+                            <div class="grid">
+                                <a href="https://www.cyamoda.com/giftcard.html?srsltid=AfmBOopJ3NBKKazBSdBxN8dZOs4a8IPMY4NEEgRrKl0EQNkBOFD1lscl"
+                                    target="_blank" rel="noopener noreferrer">
+                                    <img src="assets/images/partners/img-4.jpg" alt="Logo Tienda 4">
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div> <!-- end contianer -->
         </section>
         <!-- end gift-registry-section -->
-<br><br>
+        <br><br>
         <!-- start footer-section -->
         <footer class="footer-section">
             <div class="container">
@@ -841,7 +863,7 @@
                             </div>
                             <h3>Por siempre nuestro amor, Gracias</h3><br>
                             <p>Un día inolvidable, compartido con personas inolvidables. ¡Gracias!</p>
-                            
+
                         </div>
                     </div>
                 </div>
@@ -902,29 +924,29 @@
     </script>
 
 
-<!--CONTADOR-->
-<script>
-// Función para formatear números con 2 dígitos
-function formatNumber(num) {
-    return num < 10 ? `0${num}` : num;
-}
+    <!--CONTADOR-->
+    <script>
+        // Función para formatear números con 2 dígitos
+        function formatNumber(num) {
+            return num < 10 ? `0${num}` : num;
+        }
 
-// Contador regresivo principal
-function startCountdown() {
-    const weddingDate = new Date('2025-08-30T00:00:00').getTime();
-    
-    function update() {
-        const now = new Date().getTime();
-        const distance = weddingDate - now;
-        
-        // Cálculos del tiempo
-        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-        
-        // Generar HTML
-        document.getElementById('clock').innerHTML = `
+        // Contador regresivo principal
+        function startCountdown() {
+            const weddingDate = new Date('2025-08-30T00:00:00').getTime();
+
+            function update() {
+                const now = new Date().getTime();
+                const distance = weddingDate - now;
+
+                // Cálculos del tiempo
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                // Generar HTML
+                document.getElementById('clock').innerHTML = `
             <div class="time-block">
                 <span class="time-number">${formatNumber(days)}</span>
                 <span class="time-label"><BR>DÍAS</span>
@@ -942,85 +964,86 @@ function startCountdown() {
                 <span class="time-label"><BR>SEGUNDOS</span>
             </div><br>
         `;
-        // Si la cuenta regresiva terminó
-        if (distance < 0) {
-            clearInterval(timer);
-            document.getElementById('clock').innerHTML = `
+                // Si la cuenta regresiva terminó
+                if (distance < 0) {
+                    clearInterval(timer);
+                    document.getElementById('clock').innerHTML = `
                 <div class="wedding-message">
                     ¡La boda ha comenzado!
                 </div>
             `;
+                }
+            }
+            // Actualizar inmediatamente y luego cada segundo
+            update();
+            const timer = setInterval(update, 1000);
         }
-    }
-    // Actualizar inmediatamente y luego cada segundo
-    update();
-    const timer = setInterval(update, 1000);
-}
-// Iniciar cuando el DOM esté listo
-document.addEventListener('DOMContentLoaded', startCountdown);
-</script>
+        // Iniciar cuando el DOM esté listo
+        document.addEventListener('DOMContentLoaded', startCountdown);
+    </script>
 
 
 
 
-<!-- Reproductor de música flotante -->
-<div id="music-player">
-    <audio id="audio-player" loop>
-        <source src="assets/images/MUSICA/Piano Magic Motive.mp3" type="audio/mpeg">
-        Tu navegador no soporta el elemento de audio.
-    </audio>
-    <div class="player-controls">
-        <button id="play-btn">▶</button>
-        <button id="mute-btn">🔊</button>
-        <span id="song-title">Canción de la boda</span>
+    <!-- Reproductor de música flotante -->
+    <div id="music-player">
+        <audio id="audio-player" loop>
+            <source src="assets/images/MUSICA/Piano Magic Motive.mp3" type="audio/mpeg">
+            Tu navegador no soporta el elemento de audio.
+        </audio>
+        <div class="player-controls">
+            <button id="play-btn">▶</button>
+            <button id="mute-btn">🔊</button>
+            <span id="song-title">Canción de la boda</span>
+        </div>
     </div>
-</div>
 
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    const audioPlayer = document.getElementById('audio-player');
-    const playBtn = document.getElementById('play-btn');
-    const muteBtn = document.getElementById('mute-btn');
-    
-    // Configura la ruta de tu canción (asegúrate que la ruta es correcta)
-    audioPlayer.src = "assets/images/MUSICA/Piano Magic Motive.mp3";
-    
-    // Controlador del botón play/pause
-    playBtn.addEventListener('click', function() {
-        if (audioPlayer.paused) {
-            audioPlayer.play();
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const audioPlayer = document.getElementById('audio-player');
+            const playBtn = document.getElementById('play-btn');
+            const muteBtn = document.getElementById('mute-btn');
+
+            // Configura la ruta de tu canción (asegúrate que la ruta es correcta)
+            audioPlayer.src = "assets/images/MUSICA/Piano Magic Motive.mp3";
+
+            // Controlador del botón play/pause
+            playBtn.addEventListener('click', function () {
+                if (audioPlayer.paused) {
+                    audioPlayer.play();
+                    playBtn.textContent = "❚❚";
+                } else {
+                    audioPlayer.pause();
+                    playBtn.textContent = "▶";
+                }
+            });
+
+            // Controlador del botón mute/unmute
+            muteBtn.addEventListener('click', function () {
+                if (audioPlayer.muted) {
+                    audioPlayer.muted = false;
+                    muteBtn.textContent = "🔊";
+                } else {
+                    audioPlayer.muted = true;
+                    muteBtn.textContent = "🔇";
+                }
+            });
+
+            // Reproducir automáticamente (puedes comentar esto si no lo quieres)
+            audioPlayer.play().catch(e => console.log("Autoplay no permitido: ", e));
             playBtn.textContent = "❚❚";
-        } else {
-            audioPlayer.pause();
-            playBtn.textContent = "▶";
-        }
-    });
-    
-    // Controlador del botón mute/unmute
-    muteBtn.addEventListener('click', function() {
-        if (audioPlayer.muted) {
-            audioPlayer.muted = false;
-            muteBtn.textContent = "🔊";
-        } else {
-            audioPlayer.muted = true;
-            muteBtn.textContent = "🔇";
-        }
-    });
-    
-    // Reproducir automáticamente (puedes comentar esto si no lo quieres)
-    audioPlayer.play().catch(e => console.log("Autoplay no permitido: ", e));
-    playBtn.textContent = "❚❚";
-});
-</script>
+        });
+    </script>
 
 
 
 
 </body>
 <footer class="footer">
-  <div class="footer-bottom">
-    <p>Copyright 2025, Hecho con amor por <a href="https://www.facebook.com/TeenInformaticsCode" target="_blank">Teen Informatis</a></p>
-  </div>
+    <div class="footer-bottom">
+        <p>Copyright 2025, Hecho con amor por <a href="https://www.facebook.com/TeenInformaticsCode"
+                target="_blank">Teen Informatis</a></p>
+    </div>
 </footer>
 
 
