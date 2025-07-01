@@ -491,7 +491,7 @@
                                 <p>Una ceremonia íntima en una iglesia histórica del siglo XVIII, seguida de un cóctel
                                     en sus jardines. Vestuario formal elegante.</p>
                                 <a class="see-location-btn popup-gmaps"
-                                    href="https://maps.app.goo.gl/TRkvbaVbuf2W8mwMA">
+                                    href="https://maps.app.goo.gl/T6haRSNDE9Nw5n1D6">
                                     Ver ubicación <i class="fa fa-angle-right"></i>
                                 </a>
                             </div>
@@ -507,7 +507,7 @@
                                 <p>Celebraremos bajo las estrellas en los jardines de una hacienda andaluza. Habrá
                                     música en vivo, baile y una cena preparada por el novio.</p>
                                 <a class="see-location-btn popup-gmaps"
-                                    href="https://maps.app.goo.gl/YuvVs3JT26jcbhVE9">
+                                    href="https://maps.app.goo.gl/my8r6PQaTyxRuXZCA">
                                     Ver ubicación <i class="fa fa-angle-right"></i>
                                 </a>
                             </div>
@@ -803,19 +803,27 @@
                 <div class="row">
                     <div class="col col-xs-12">
                         <div class="partner-grids clearfix">
-                            <div class="grid">
-                                <img src="assets/images/partners/img-1.jpg" alt>
-                            </div>
-                            <div class="grid">
-                                <img src="assets/images/partners/img-2.jpg" alt>
-                            </div>
-                            <div class="grid">
-                                <img src="assets/images/partners/img-3.jpg" alt>
-                            </div>
-                            <div class="grid">
-                                <img src="assets/images/partners/img-4.jpg" alt>
-                            </div>
-                        </div>
+    <div class="grid">
+        <a href="https://www.tienda1.com" target="_blank" rel="noopener noreferrer">
+            <img src="assets/images/partners/img-1.jpg" alt="Logo Tienda 1">
+        </a>
+    </div>
+    <div class="grid">
+        <a href="https://www.tienda2.com" target="_blank" rel="noopener noreferrer">
+            <img src="assets/images/partners/img-2.jpg" alt="Logo Tienda 2">
+        </a>
+    </div>
+    <div class="grid">
+        <a href="https://www.tienda3.com" target="_blank" rel="noopener noreferrer">
+            <img src="assets/images/partners/img-3.jpg" alt="Logo Tienda 3">
+        </a>
+    </div>
+    <div class="grid">
+        <a href="https://www.tienda4.com" target="_blank" rel="noopener noreferrer">
+            <img src="assets/images/partners/img-4.jpg" alt="Logo Tienda 4">
+        </a>
+    </div>
+</div>
                     </div>
                 </div>
             </div> <!-- end contianer -->
@@ -934,7 +942,6 @@ function startCountdown() {
                 <span class="time-label"><BR>SEGUNDOS</span>
             </div>
         `;
-        
         // Si la cuenta regresiva terminó
         if (distance < 0) {
             clearInterval(timer);
@@ -945,15 +952,69 @@ function startCountdown() {
             `;
         }
     }
-    
     // Actualizar inmediatamente y luego cada segundo
     update();
     const timer = setInterval(update, 1000);
 }
-
 // Iniciar cuando el DOM esté listo
 document.addEventListener('DOMContentLoaded', startCountdown);
 </script>
+
+
+
+
+<!-- Reproductor de música flotante -->
+<div id="music-player">
+    <audio id="audio-player" loop>
+        <source src="assets/images/MUSICA/Piano Magic Motive.mp3" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+    <div class="player-controls">
+        <button id="play-btn">▶</button>
+        <button id="mute-btn">🔊</button>
+        <span id="song-title">Canción de la boda</span>
+    </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const audioPlayer = document.getElementById('audio-player');
+    const playBtn = document.getElementById('play-btn');
+    const muteBtn = document.getElementById('mute-btn');
+    
+    // Configura la ruta de tu canción (asegúrate que la ruta es correcta)
+    audioPlayer.src = "assets/images/MUSICA/Piano Magic Motive.mp3";
+    
+    // Controlador del botón play/pause
+    playBtn.addEventListener('click', function() {
+        if (audioPlayer.paused) {
+            audioPlayer.play();
+            playBtn.textContent = "❚❚";
+        } else {
+            audioPlayer.pause();
+            playBtn.textContent = "▶";
+        }
+    });
+    
+    // Controlador del botón mute/unmute
+    muteBtn.addEventListener('click', function() {
+        if (audioPlayer.muted) {
+            audioPlayer.muted = false;
+            muteBtn.textContent = "🔊";
+        } else {
+            audioPlayer.muted = true;
+            muteBtn.textContent = "🔇";
+        }
+    });
+    
+    // Reproducir automáticamente (puedes comentar esto si no lo quieres)
+    audioPlayer.play().catch(e => console.log("Autoplay no permitido: ", e));
+    playBtn.textContent = "❚❚";
+});
+</script>
+
+
+
 
 </body>
 <footer class="footer">
