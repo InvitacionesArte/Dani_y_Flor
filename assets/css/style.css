@@ -3679,3 +3679,27 @@ img {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+.footer {
+  background-color: #b19a56;
+  color: #f1f1f1;
+  padding: 20px 0;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.footer-bottom a {
+font-size: 16px;
+  color: #744f02;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+
+/* CONTADOR
