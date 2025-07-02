@@ -3771,7 +3771,7 @@ font-size: 16px;
 @media (max-width: 480px) {
     #clock {
         gap: 8px;
-        padding-bottom: 10%; 
+        padding-bottom: 8%; /*clock solucion del cuadro */
     }
     .time-block {
         min-width: 70px;
